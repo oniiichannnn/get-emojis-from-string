@@ -19,7 +19,7 @@ module.exports = (content) => {
                 id: matchDiscordEmoji[3],
                 animated: matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? true : false,
                 image: `${
-                    (matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? true : false) === true ?
+                    (matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? false : true) === true ?
                     `https://cdn.discordapp.com/emojis/${matchDiscordEmoji[3]}.png?v=1`
                     :
                     `https://cdn.discordapp.com/emojis/${matchDiscordEmoji[3]}.gif?v=1`
