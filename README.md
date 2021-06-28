@@ -28,3 +28,5 @@ console.log(getEmojis("❤️ Discord partner emoji <:PARTNERED_SERVER_OWNER:857
 ]
 */
 ```
+
+Need help? https://discord.gg/ev6jaTB648
