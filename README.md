@@ -5,15 +5,15 @@ Examples:
 ```js
 let getEmojis = require("get-emojis-from-string")
 console.log(getEmojis("hello ❤️"))
-// [ { name: '❤', id: '❤', type: 'Default Emoji' } ]
+// [ { name: '❤', id: '❤', animated: false, type: 'Default Emoji' } ]
 ```
 ```js
 let getEmojis = require("get-emojis-from-string")
-console.log(getEmojis("Discord partner emoji <:PARTNERED_SERVER_OWNER:857501148532965396> Discord verified <:verified:780972928123928597>"))
+console.log(getEmojis("Discord partner emoji <a:PARTNERED_SERVER_OWNER:857501148532965396> Discord verified <:verified:780972928123928597>"))
 /*
 [
-  { name: 'PARTNERED_SERVER_OWNER', id: '857501148532965396', type: 'Discord Emoji'},
-  { name: 'verified', id: '780972928123928597', type: 'Discord Emoji' }
+  { name: 'PARTNERED_SERVER_OWNER', id: '857501148532965396', animated: true, type: 'Discord Emoji'},
+  { name: 'verified', id: '780972928123928597', animated: false, type: 'Discord Emoji' }
 ]
 */
 ```
@@ -22,9 +22,9 @@ let getEmojis = require("get-emojis-from-string")
 console.log(getEmojis("❤️ Discord partner emoji <:PARTNERED_SERVER_OWNER:857501148532965396> Discord verified <:verified:780972928123928597>"))
 /*
 [
-    { name: '❤', id: '❤', type: 'Default Emoji' },
-    { name: 'PARTNERED_SERVER_OWNER', id: '857501148532965396', type: 'Discord Emoji'},
-    { name: 'verified', id: '780972928123928597', type: 'Discord Emoji' }
+    { name: '❤', id: '❤', animated: false, type: 'Default Emoji' },
+    { name: 'PARTNERED_SERVER_OWNER', id: '857501148532965396', animated: true, type: 'Discord Emoji'},
+    { name: 'verified', id: '780972928123928597', animated: false, type: 'Discord Emoji' }
 ]
 */
 ```
