@@ -17,6 +17,7 @@ module.exports = (content) => {
             emojis.push({
                 name: matchDiscordEmoji[0].split(":")[1].split(":")[0],
                 id: matchDiscordEmoji[3],
+                animated: matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? true : false,
                 type: "Discord Emoji"
             })
         } else 
@@ -25,6 +26,7 @@ module.exports = (content) => {
             emojis.push({
                 name: matchDefaultEmoji[0],
                 id: matchDefaultEmoji[0],
+                animated: false,
                 type: "Default Emoji"
             })
         }
