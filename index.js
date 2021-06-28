@@ -18,6 +18,12 @@ module.exports = (content) => {
                 name: matchDiscordEmoji[0].split(":")[1].split(":")[0],
                 id: matchDiscordEmoji[3],
                 animated: matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? true : false,
+                image: `${
+                    (matchDiscordEmoji[1] && matchDiscordEmoji[1] === 'a' ? true : false) === true ?
+                    `https://cdn.discordapp.com/emojis/${matchDiscordEmoji[3]}.png?v=1`
+                    :
+                    `https://cdn.discordapp.com/emojis/${matchDiscordEmoji[3]}.gif?v=1`
+                }`,
                 type: "Discord Emoji"
             })
         } else 
@@ -27,6 +33,7 @@ module.exports = (content) => {
                 name: matchDefaultEmoji[0],
                 id: matchDefaultEmoji[0],
                 animated: false,
+                image: null,
                 type: "Default Emoji"
             })
         }

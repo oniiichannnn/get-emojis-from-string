@@ -7,6 +7,7 @@ type Emojis = {
     name: String,
     id: String,
     animated: Boolean,
+    image: String,
     type: "Discord Emoji" | "Default Emoji"
 }
 
