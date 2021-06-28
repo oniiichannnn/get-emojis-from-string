@@ -3,7 +3,7 @@ Get emojis from a string
 @param string - String that contains the emojis.
 */
 
-type ArrayOfEmojis = {
+type Emojis = {
     name: String,
     id: String,
     type: "Discord Emoji" | "Default Emoji"
@@ -12,6 +12,6 @@ type ArrayOfEmojis = {
 
 declare function getEmojisFromString(
 	string: string,
-): ArrayOfEmojis[];
+): Emojis[];
 
 export = getEmojisFromString;
