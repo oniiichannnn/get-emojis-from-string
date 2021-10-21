@@ -1,0 +1,32 @@
+{
+  "name": "get-emojis-from-string",
+  "version": "1.6.1",
+  "description": "Get Default or Discord emojis from string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ivan-Da-Dev/get-emojis-from-string.git"
+  },
+  "keywords": [
+    "discord",
+    "emoji",
+    "default",
+    "emojis",
+    "get",
+    "emoji",
+    "from",
+    "string"
+  ],
+  "author": "potsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ivan-Da-Dev/get-emojis-from-string/issues"
+  },
+  "homepage": "https://github.com/Ivan-Da-Dev/get-emojis-from-string#readme",
+  "dependencies": {
+    "twemoji": "^13.1.0"
+  }
+}

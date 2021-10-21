@@ -11,9 +11,14 @@ type Emojis = {
     type: "Discord Emoji" | "Default Emoji"
 }
 
+type Options = {
+    onlyDiscordEmojis?: Boolean,
+    onlyDefaultEmojis?: Boolean
+}
 
 declare function getEmojisFromString(
-	string: string,
+	string     : string,
+    options    : Options = {}
 ): Emojis[];
 
 export = getEmojisFromString;
