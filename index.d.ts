@@ -4,16 +4,16 @@ Get emojis from a string
 */
 
 type Emojis = {
-    name: String,
-    id: String,
-    animated: Boolean,
-    image: String,
+    name: string,
+    id: string,
+    animated: boolean,
+    image: string,
     type: "Discord Emoji" | "Default Emoji"
 }
 
 type Options = {
-    onlyDiscordEmojis?: Boolean,
-    onlyDefaultEmojis?: Boolean
+    onlyDiscordEmojis?: boolean,
+    onlyDefaultEmojis?: boolean
 }
 
 declare function getEmojisFromString(
